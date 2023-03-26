@@ -1,5 +1,3 @@
-// 
-
 export default function ehMaiorDeIdade(campo) {
   const dataNascimento = new Date(campo.value);
   if (!validaIdade(dataNascimento)) {
@@ -13,12 +11,3 @@ function validaIdade(data) {
 
   return dataAtual >= dataMais18;
 }
-
-// function mainorQue18(data) {
-//   // traz a data atual
-//   const dataAtual = new Date();
-//   // data recebido mais o ano (idade minima para validação);
-//   const dataMais18 = new Date(data.getUTCFullYear() + 18, data.getUTCMonth(), data.getUTCDate())
-
-//   return dataMais18 <= dataAtual;
-// };
