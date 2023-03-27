@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "chrome",
+            "name": "http://monihillman",
+            "request": "launch",
+            "url": "http://monihillman"
+        }
+    ]
+}
