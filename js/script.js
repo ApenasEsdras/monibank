@@ -1,12 +1,18 @@
+// importação dos arquivos responsáveis por executarem a logica de autenticação.
 import ehUmCPF from "./valida-cpf.js";
 import ehMaiorDeIdade from "./valida-idade.js";
+
+// variáveis responsaveis por receber valores do HTML
 const camposDoFormulario = document.querySelectorAll('[required]')
 const formulario = document.querySelector('[data-formulario]');
 
+// gravação de dados no LocalStorege
 formulario.addEventListener("submit", (e) => {
+    // previnir
     e.preventDefault();
 
     const listaRespostas = {
+        // target == ouvinte de eventos apartir do submit
         "nome": e.target.elements["nome"].value,
         "email": e.target.elements["email"].value,
         "rg": e.target.elements["rg"].value,
